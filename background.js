@@ -41,6 +41,6 @@ chrome.storage.sync.get( "deref_url", function( item ) {
   if ( Object.getOwnPropertyNames( item ).length === 0 ) {
     // did not find a property named "deref_url".
     // assuming first run of extension and setting dereferer service to "nptr.xyz"
-    chrome.storage.sync.set( { "deref_url" : "http://nptr.xzy/?" }, function( ) { } );
+    chrome.storage.sync.set( { "deref_url" : "http://nptr.xyz/?" }, function( ) { } );
   }
 });
